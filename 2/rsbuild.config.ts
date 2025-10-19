@@ -11,5 +11,6 @@ export default defineConfig({
       root: isNoMinify ? 'dist-no-minify' : 'dist-minify',
     },
     minify: !isNoMinify,
+    cleanDistPath: true,
   },
 });
