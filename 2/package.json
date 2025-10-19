@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "rsbuild build",
+    "build:no-minify": "rsbuild build --env-mode no-minify",
+    "build:all": "pnpm build:no-minify && pnpm build",
+    "build:all:watch": "pnpm build:no-minify --watch & pnpm build --watch",
     "dev": "rsbuild dev --open",
     "preview": "rsbuild preview"
   },
